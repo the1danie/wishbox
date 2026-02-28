@@ -16,6 +16,11 @@ app.add_middleware(
         settings.FRONTEND_URL,
         "http://localhost:3000",
         "https://wishbox-flame.vercel.app",
+        # React Native Metro / emulator origins
+        "http://localhost:8081",
+        "http://10.0.2.2:3000",
+        "http://10.0.2.2:8081",
+        "*",
     ],
     allow_credentials=True,
     allow_methods=["*"],
