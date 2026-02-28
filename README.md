@@ -10,6 +10,19 @@ docker-compose up --build
 - Backend API: http://localhost:8000
 - Docs: http://localhost:8000/docs
 
+### Мобильное приложение (React Native)
+
+Для запуска мобильного приложения (iOS) локально:
+
+```bash
+cd mobile
+npm install
+cd ios && bundle exec pod install && cd ..
+npx react-native run-ios
+```
+
+> **Примечание:** Для корректной работы приложения убедитесь, что backend запущен локально или пропишите актуальные URL развернутого бекенда в `mobile/src/constants.ts`.
+
 ## Деплой
 
 ### Backend (Railway)
